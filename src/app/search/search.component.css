@@ -1,0 +1,12 @@
+.search-bar {
+    padding: 10px;
+    margin: 0 auto;
+    border-style: 1px  inset  #d2e3ed;
+    border: 1px solid gray;
+    height: 100px;
+    width: 800px;
+}
+
+.country-list {
+    margin: 0 auto;
+}

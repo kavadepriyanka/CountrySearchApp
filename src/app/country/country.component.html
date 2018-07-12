@@ -1,0 +1,10 @@
+<!-- <app-country-detail [country]="selectedCountry">not rendering</app-country-detail> -->
+
+<h3>Countries List</h3>
+<ul class="countries">
+    <li *ngFor="let c of countries | filter : searchText">
+      <a routerLink="/detail/{{c.name}}">
+        <span class="badge">{{c.area}}</span> {{c.name | uppercase}} <i>{{c.languages[0].nativeName}}</i>
+      </a> 
+    </li>
+  </ul>

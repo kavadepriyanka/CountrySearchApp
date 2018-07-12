@@ -1,0 +1,10 @@
+.register-div {
+    width: 300px;
+    border: 1px solid teal;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.register-div > h2 {
+    text-align: center;
+}

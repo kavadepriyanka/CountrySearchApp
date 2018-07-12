@@ -1,0 +1,11 @@
+.p {
+    color: brown;
+    background-color: lavender;
+}
+
+.map-div {
+    width:300px;
+    height:300px; 
+    border: 2px solid palegreen; 
+    text-align:center;
+}

@@ -1,0 +1,14 @@
+
+<div class="p container-fluid" *ngIf="country">
+    <div class="col-md-4">
+        <h3>{{ country.name | uppercase }} Details</h3>
+    </div>
+    <div class="col-md-3"><span>area: </span>{{country.area}} 
+      <span>name: </span>{{country.name}}
+    </div>
+    <div class="col-md-5"><img alt="{{country.name}}" src="{{country.flag}}" height="80px" width="120px"></div>
+  </div>
+  <div class="container">
+      <div #gmap class="map-div"></div>
+    </div>
+
