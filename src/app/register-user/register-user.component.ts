@@ -9,11 +9,12 @@ import { User } from '../user';
   styleUrls: ['./register-user.component.css']
 })
 export class RegisterUserComponent implements OnInit {
-
+  registerFlag: boolean = false;
+  confirmPassword: string = '';
   model: User = {
-    firstName: '',
-    lastName: '',
-    userName: '',
+    // firstName: '',
+    // lastName: '',
+    // userName: '',
     email: '',
     password: ''
   }
@@ -21,6 +22,11 @@ export class RegisterUserComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  // toggleFlag(): void {
+  //   this.registerFlag = !this.registerFlag;
+  //   console.log(this.registerFlag);
+  // }
 
   registerUser(): void {
     let users: User[];

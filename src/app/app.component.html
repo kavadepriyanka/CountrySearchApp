@@ -1,19 +1,15 @@
-<!-- <img class="app-div-img" alt="Background Image" src="../assets/images/index.jpg"> -->
-<!-- <div class="app-div">
-    <h4 style="text-align:center; margin:20px; background-color:aquamarine">
-        Welcome to {{ title }}!
-    </h4>
-    <button type="button" onclick="">Register</button>
-</div> -->
-
-<div class="container-fluid" style="background-color:bisque">
-    <nav class="navbar navbar-dark bg-dark">
-      <a class="navbar-brand" routerLink="/home">Find my Country</a>
-      <a class="nav-item" *ngIf="!loggedIn" routerLink="/register">Login</a>
-      <a class="nav-item" *ngIf="loggedIn" routerLink="/countries">Home</a>
-      <a class="nav-item" *ngIf="loggedIn" routerLink="/favorites">Favorites</a>
-  </nav>  
-</div>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" routerLink="/home">Find my Country</a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a *ngIf="loggedIn" routerLink="/countries">Home</a></li>
+        <li><a *ngIf="loggedIn" routerLink="/favorites">Favorites</a></li>
+        <li><a *ngIf="!loggedIn" routerLink="/register"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </nav> 
   
 <router-outlet></router-outlet>
 <app-message></app-message>

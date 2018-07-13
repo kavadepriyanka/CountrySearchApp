@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("../node_modules/bootstrap/dist/css/bootstrap.min.css");
+@import url("../node_modules/font-awesome/css/font-awesome.min.css");
+
+body {
+    background-image: url("/assets/images/maps.jpg");
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 
+    'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.content {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 10px;
+}

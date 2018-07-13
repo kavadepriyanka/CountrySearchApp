@@ -1,7 +1,9 @@
-<div class="search-bar">
-  <h5>search for country</h5>
-  <input [(ngModel)]="searchText" placeholder="Start typing here...">
-</div>
-<div class="country-list">
-    <app-country [countries] = "countries" [searchText]="searchText"></app-country>
+<div class="content">
+    <div class="search-bar">
+        <h5>search for country</h5>
+        <input [(ngModel)]="searchText" placeholder="Start typing here...">
+      </div>
+      <div class="country-list">
+          <app-country [countries] = "countries" [searchText]="searchText"></app-country>
+      </div>
 </div>
