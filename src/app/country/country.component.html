@@ -4,7 +4,7 @@
 <ul class="countries">
     <li *ngFor="let c of countries | filter : searchText">
       <a routerLink="/detail/{{c.name}}">
-        <span class="badge">{{c.area}}</span> {{c.name | uppercase}} <i>{{c.languages[0].nativeName}}</i>
+        <img class="badge" alt="{{c.name}}" src="{{c.flag}}" > {{c.name | uppercase}} <i>{{c.languages[0].nativeName}}</i>
       </a> 
     </li>
   </ul>

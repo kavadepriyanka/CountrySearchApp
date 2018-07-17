@@ -32,6 +32,7 @@ export class CountryDetailComponent implements OnInit {
     this.countryService.getCountry(name)
         .subscribe(country => {
           this.country = country[0];
+          console.log(this.country);
           this.initMap();
         });
   }

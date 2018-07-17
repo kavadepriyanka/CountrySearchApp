@@ -1,21 +1,55 @@
 
 <div class="content">
-        <div class="p container-fluid" *ngIf="country">
+        <div class="container" *ngIf="country">
           <div>
-              <h3>{{ country.name }}</h3><span><i class="fas fa-heart"></i></span>
+              <h3>{{ country.name }} <span><i class="fas fa-heart"></i></span></h3>
               <hr>
+              COUNTRY INFORMATION
           </div>
           <div>
-            COUNTRY INFORMATION
-            
-          </div>
-                <div class="col-md-3"><span>area: </span>{{country.area}} 
-                  <span>name: </span>{{country.name}}
+            <div class="row">
+              <div class="col-md-8">
+                <div class="row">
+                  <div class="col-md-5 box">
+                    <h6>Capital:</h6>
+                    <h2>{{country.capital}}</h2>
+                  </div>
+                  <div class="col-md-5 box">
+                    <h6>Subregion:</h6>
+                    <h2>{{country.subregion}}</h2>
+                  </div>
                 </div>
-                <div class="col-md-5"><img alt="{{country.name}}" src="{{country.flag}}" height="80px" width="120px"></div>
+                <div class="row">
+                  <div class="col-md-5 box">
+                    <h6>Region:</h6>
+                    <h2>{{country.region}}</h2>
+                  </div>
+                  <div class="col-md-5 box">
+                    <h6>Area:</h6>
+                    <h2>{{country.area}}</h2>
+                  </div>
+                </div>
               </div>
-              <div class="container">
-                  <div #gmap class="map-div"></div>
+              <div class="col-md-4 col-md-pull-1">
+                <div class="population-box">
+                  <h6>Population</h6>
+                  <h2>{{country.population}}</h2>
                 </div>
+              </div>
+            </div>
+          </div> 
+          <hr>
+        <div>
+          <strong>CURRENCIES</strong><br>
+          Name: <strong>{{country.currencies[0].name}}</strong><br>
+          Symbol: <strong>{{country.currencies[0].symbol}}</strong><br>
+          Convert to INR:
+        </div>
+        <hr>
+        </div>
+        <div class="container">
+          LOCATION
+            <div #gmap class="map-div"></div>
+          </div>
             
 </div>

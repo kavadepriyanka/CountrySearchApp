@@ -16,7 +16,7 @@
     background-color: #EEE;
     margin: .5em;
     padding: .3em 0;
-    height: 1.6em;
+    height: 40px;
     border-radius: 4px;
   }
   .countries li.selected:hover {
@@ -36,13 +36,13 @@
     display: inline-block;
     font-size: small;
     color: white;
-    padding: 0.8em 0.7em 0 0.7em;
+    /* padding: 0.8em 0.7em 0 0.7em; */
     background-color: #607D8B;
-    line-height: 1em;
+    /* line-height: 1em; */
     position: relative;
     left: -1px;
     top: -4px;
     height: 1.8em;
     margin-right: .8em;
-    border-radius: 4px 0 0 4px;
+    border-radius: 4px;
   }
