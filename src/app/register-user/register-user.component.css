@@ -1,16 +1,21 @@
 .register-div {
     background-color: white;
-    width: 300px;
+    width: 700px;
+    min-height: 300px;
     border: 1px solid teal;
     padding: 10px;
     margin: 0 auto;
 }
 
-.register-div > h2 {
+.register-div > h2,h1,p {
     text-align: center;
 }
 
-/* .form-div {
-    
-    background-color: antiquewhite;
-} */
+.register-div p {
+    color: lightslategray;
+}
+
+.form-div {
+    width: 350px;
+    margin: 0 auto;
+}

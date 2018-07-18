@@ -16,6 +16,7 @@ export class CountryDetailComponent implements OnInit {
   //for Map
   @ViewChild('gmap') gmapEle: any;
   map: google.maps.Map;
+  isFav: boolean = false;
 
   constructor(
     private route: ActivatedRoute,
@@ -44,6 +45,10 @@ export class CountryDetailComponent implements OnInit {
       mapTypeId: google.maps.MapTypeId.ROADMAP
     };
     this.map = new google.maps.Map(this.gmapEle.nativeElement, mapProp);
+  }
+
+  setFavorite() : void {
+    this.isFav = !this.isFav;
   }
 
   goBack() : void {

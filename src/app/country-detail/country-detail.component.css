@@ -1,7 +1,10 @@
-/* .p {
-    color: brown;
-    background-color: lavender;
-} */
+i {
+    padding-top: 25px
+}
+
+.fa-heart {
+    color: #de1d98;
+}
 
 .map-div {
     width:700px;

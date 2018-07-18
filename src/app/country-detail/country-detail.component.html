@@ -2,7 +2,10 @@
 <div class="content">
         <div class="container" *ngIf="country">
           <div>
-              <h3>{{ country.name }} <span><i class="fas fa-heart"></i></span></h3>
+            <div class="row">
+                <h3 class="col-md-11">{{ country.name }} </h3>
+                <span class="col-md-1"><i [ngClass]="{'fas': isFav, 'far': !isFav}" class="fa-heart" (click)="setFavorite()"></i></span>
+            </div>
               <hr>
               COUNTRY INFORMATION
           </div>

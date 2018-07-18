@@ -11,8 +11,12 @@ export class AppComponent {
   title = 'find my country';
   loggedIn : boolean;
   ngOnInit() {
-    let users: User[] = [];
-    console.log('craeting local storage');
+    let users: User[] = [{
+      email: 'kavadepriyanka@yahoo.com',
+      password: '1234'
+    }];
+
+    console.log('creating local storage');
     localStorage.setItem('users', JSON.stringify(users));
   }
 }
