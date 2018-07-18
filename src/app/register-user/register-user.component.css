@@ -4,7 +4,7 @@
     min-height: 300px;
     border: 1px solid teal;
     padding: 10px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .register-div > h2,h1,p {
